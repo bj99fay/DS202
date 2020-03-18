@@ -1,0 +1,6 @@
+fbi$Rate <- fbi$COunt / fbi$Popultaion
+
+boxplot(fbi$Rate ~ fbi$Type)
+boxplot(fbi$Rate ~ type11)
+type3 <- reorder(fbi$Type, fbi$Rate, median, na.rm = TRUE)
+boxplot(fbi$Rate ~ type3)
